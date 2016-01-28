@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Roshambo</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--write html below this line-->
+  <div class="jumbotron text-center">
+    <h1>Rock Paper Scissors</h1>
+  </div>
+
+  <div class="container">
+    <div id="win" class="panel panel-success hidden">
+      <div class="panel-heading">
+        <h3 class="panel-title">You won!</h3>
+      </div>
+      <div class="panel-body">You Won! Computer chose: <span id="win-message"></span></div>
+    </div>
+
+    <div id="lost" class="panel panel-danger hidden">
+      <div class="panel-heading">
+        <h3 class="panel-title">You Lost <i class="fa fa-frown-o"></i></h3>
+      </div>
+      <div class="panel-body">You Lost. Computer chose: <span id="lost-message"></span></div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Rock</h3>
+          </div>
+          <div class="panel-body text-center">
+            <i class="fa fa-hand-rock-o fa-6"></i>
+            <p>
+              <button onclick="play('rock')" class="btn btn-info">Rock</button>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Paper</h3>
+          </div>
+          <div class="panel-body text-center">
+            <i class="fa fa-hand-paper-o fa-6"></i>
+            <p>
+              <button onclick="play('paper')" class="btn btn-info">Paper</button>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Scissors</h3>
+          </div>
+          <div class="panel-body text-center">
+            <i class="fa fa-hand-scissors-o fa-6"></i>
+            <p>
+              <button onclick="play('scissors')" class="btn btn-info">Scissors</button>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!--write html above this line-->
+  <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>-->
+  <!--the following line is used to link your javascript file.-->
+  <script src="app.js"></script>
+</body>
+
+</html>
