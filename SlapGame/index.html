@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>Slap Object Game</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="game.css">
+	
+</head>
+<body>
+	<div class="container">
+        <div class="col-md-10 col-md-offset-1">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Slap Object Game - <span id="player-name"></span></h3>
+          </div>
+          <div class="panel-body text-center">
+            <i id="character" class="fa fa-male fa-6"></i>
+            <p>
+              <button onclick="slap()" class="btn btn-info">Slap</button>
+              <button onclick="punch()" class="btn btn-warning">Punch</button>
+              <button onclick="kick()" class="btn btn-danger">Kick</button>
+            </p>
+            <div>
+              <meter id="health-meter" low="0.4" optimum="0.2" high="0.8" value="0.0"></meter>
+            </div>
+          </div>
+          <div class="panel-footer">
+            Health: <span id="player-health"></span>
+            Hits: <span id="player-hits"></span>
+            <button class="pull-right" onclick="changeGender()">Gender</button>
+            <button class="pull-right" onclick="reset()">Reset</button>
+            <button class="pull-right" onclick="changeName()">Change Name</button>
+          </div>
+        </div>
+      </div>
+  </div>  
+  <script src="game.js"></script>
+</body>
+</html>
